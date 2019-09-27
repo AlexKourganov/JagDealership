@@ -218,7 +218,7 @@ $('.gallery-item').magnificPopup({
         link.preventDefault();
         let target = $(this).attr('href');
         $('html,body').stop().animate({
-            scrollTop:$(target).offset().top - 25
+            scrollTop:$(target).offset().top - 50
         },1500);
     });
 // 
