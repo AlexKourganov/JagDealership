@@ -33,12 +33,12 @@ const CreateCars = (() => {
         makeCar('c-type', 'Britain', 'img/special1952.jpg', true, '1952', '6,000,000', 'sports', 'manual', '5');
         makeCar('e-type', 'Britain', 'img/special1961.jpg', true, '1961', '3,000,000', 'sports', 'manual', '5');
         makeCar('e-type', 'Britain', 'img/special1972.jpg', true, '1972', '4,000,000', 'sports', 'manual', '5');
-        makeCar('e-type', 'Britain', 'img/testjag.jpg', false, '2015', '1,000,000', 'sports', 'manual', '15');
-        makeCar('e-type', 'Britain', 'img/testjag.jpg', false, '2016', '2,000,000', 'sports', 'auto', '20');
-        makeCar('e-type', 'Britain', 'img/testjag.jpg', false, '2018', '3,000,000', 'sports', 'manual', '30');
-        makeCar('e-type', 'Britain', 'img/testjag.jpg', false, '2017', '4,000,000', 'sports', 'auto', '17');
-        makeCar('e-type', 'Britain', 'img/testjag.jpg', false, '2019', '5,000,000', 'sports', 'manual', '16');
-        makeCar('e-type', 'Britain', 'img/testjag.jpg', false, '2020', '6,000,000', 'sports', 'auto', '19');
+        makeCar('xj-type', 'Britain', 'img/jaguarxj.jpg', false, '2019', '75,000', 'sports', 'manual', '18');
+        makeCar('f-type', 'Britain', 'img/jaguarf2020.jpg', false, '2020', '62,000', 'sports', 'auto', '23');
+        makeCar('f-type', 'Britain', 'img/jaguarfpace.jpg', false, '2020', '46,000', 'offroad', 'manual', '27');
+        makeCar('i-type', 'Britain', 'img/jaguaripace.jpg', false, '2020', '70,000', 'electric', 'auto', '234');
+        makeCar('xf-type', 'Britain', 'img/jaguarxf.jpg', false, '2019', '65,000', 'offroad', 'manual', '25');
+        makeCar('xe-type', 'Britain', 'img/jaguarxe.jpg', false, '2020', '40,000', 'sports', 'auto', '25');
 
     }
     produceCars();
@@ -83,8 +83,8 @@ const displaySpecialCars = ((CreateCars) => {
     // Change the image
     info.addEventListener('click', (event) => {
 
-
-        console.log(event.target);
+        
+       
         // if clicked within a div
         if (event.target.classList.contains('featured-item')) {
             const img = event.target.firstElementChild.dataset.img;
@@ -92,17 +92,25 @@ const displaySpecialCars = ((CreateCars) => {
             $('#picture').attr('src', img);
         } else if (event.target.classList.contains('head-text')) {
             const img = event.target.parentElement.firstElementChild.dataset.img;
-            console.log(img);
+            
             $('#picture').attr('src', img);
             // console.log('yey');
         } else {
             const img = event.target.parentElement.dataset.img;
             $('#picture').attr('src', img);
         }
+        
+    console.log('before magnific');
+    $('.featured-link').magnificPopup({
+        items: {
+          src: $('.special-car-img img').attr('src')
+        },
+        type: 'image' // this is default type
+    });
+
 
 
     })
-
 
 
 
@@ -113,7 +121,7 @@ const displaySpecialCars = ((CreateCars) => {
 const displayCars = ((CreateCars) => {
     const cars = CreateCars.cars;
     const regCar = CreateCars.regCars;
-    console.log(regCar);
+   
     // car container
     const inventory = document.querySelector('.inventory-container');
 
@@ -131,7 +139,7 @@ const displayCars = ((CreateCars) => {
         regCar.forEach((car) => {
             output += `     <div class="col-12 mx-auto my-3 col-md-6 col-lg-4 ${car.trans} single-car">
         <div class="card car-card">
-            <img src="${car.img}" alt="jag1" class="card-img-top car-img">
+            <img src="${car.img}" alt="jag1" class="card-img-top car-img popup-img">
             <div class="card-body">
                 <div class="car-info d-flex justify-content-between">
                     <!-- 1st child -->
@@ -169,7 +177,7 @@ const displayCars = ((CreateCars) => {
             $grid.isotope({
                 filter: filt
             });
-            console.log($grid);
+            
 
 
         })
@@ -194,7 +202,6 @@ const displayCars = ((CreateCars) => {
 
 
 
-
 })(CreateCars);
 
 // 
@@ -210,6 +217,18 @@ $('.gallery-item').magnificPopup({
         enabled: true
     }
 });
+
+$('.featured-link').magnificPopup({
+    items: {
+      src: $('.special-car-img img').attr('src')
+    },
+    type: 'image' // this is default type
+});
+
+
+
+
+
 
 
 // 
@@ -229,3 +248,5 @@ window.onload = function () {
 
     });
 };
+
+

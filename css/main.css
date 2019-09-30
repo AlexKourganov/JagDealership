@@ -9,6 +9,9 @@ body {
   font-family: "Roboto", sans-serif;
   /* font-family: 'Jaguar Bold', sans-serif; */
 }
+.jaguar-font{
+  font-family: 'Jaguar Bold', sans-serif;
+}
 :root {
   --mainBlack: #242424;
   --mainYellow: #f1f227;
@@ -161,6 +164,12 @@ body {
   background: #242424;
   color: var(--mainYellow);
   clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.single-car:hover .car-value{
+  background-color: var(--mainYellow);
+  color: var(--mainBlack);
 }
 
 /* Questions */
@@ -375,7 +384,7 @@ transform: rotate(360deg);
       transition: all 2s ease-in-out;
   }
   .roadside:hover i{
-      transform:translateX(300%) rotate(360deg);
+      transform:translateX(20vw) rotate(360deg);
 
   }
   .deliver i{
@@ -393,12 +402,12 @@ transform: rotate(360deg);
     }
     50%{
         transform-origin: bottom right;
-        transform: translateX(500%) rotate(-45deg) rotate(90deg) ;
+        transform: translateX(20vw) rotate(-45deg) rotate(90deg) ;
        
     }
     55%{
         transform-origin: bottom right;
-        transform:translateX(500%) rotate(-1deg) ;
+        transform:translateX(20vw) rotate(-1deg) ;
        
     }
   
