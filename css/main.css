@@ -8,6 +8,7 @@
 body {
   font-family: "Roboto", sans-serif;
   /* font-family: 'Jaguar Bold', sans-serif; */
+  overflow-x: hidden;
 }
 .jaguar-font{
   font-family: 'Jaguar Bold', sans-serif;
@@ -44,10 +45,15 @@ body {
 .nav-icon {
   color: var(--mainYellow);
   text-decoration: none !important;
-  transition: color 1s ease;
+  transition: color 0.8s ease;
+ 
+
+ 
 }
 .nav-icon:hover {
   color: #fff;
+
+  
 }
 
 .navbar-icon {
@@ -69,6 +75,11 @@ body {
   border-bottom: 2px solid var(--mainYellow);
   color: #fff;
 }
+.active{
+  border-top: 2px solid var(--mainYellow);
+  border-bottom: 2px solid var(--mainYellow);
+  color: #fff;
+}
 
 /* Header */
 
@@ -80,13 +91,13 @@ body {
 }
 .height-max {
   min-height: calc(100vh - 85.99px);
-  background: url(../img/jaguarbg.png) no-repeat center center/cover;
+  background: url(../img/jaguarbg-1920.jpg) no-repeat center center/cover;
   background-attachment: fixed;
 
-  animation-name: zoomIn;
+  /* animation-name: zoomIn;
   animation-duration: 20s;
   animation-delay: 5s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
 }
 /* header animation */
 @keyframes zoomIn {
@@ -137,6 +148,7 @@ body {
 /* Inventory Section */
 .inventory {
   background: var(--mainBlack);
+  min-height: 100vh;
 }
 .inventory .card {
   border: none;
@@ -345,6 +357,7 @@ body {
     background: rgba(36, 36, 36, 0.6);
     color: var(--mainYellow);
     transition: all 1s ease-in-out;
+    
 }
 .service:hover{
     background: rgba(36, 36, 36, 0.9);
@@ -384,7 +397,7 @@ transform: rotate(360deg);
       transition: all 2s ease-in-out;
   }
   .roadside:hover i{
-      transform:translateX(20vw) rotate(360deg);
+      transform:translateX(15vw) rotate(360deg);
 
   }
   .deliver i{
@@ -402,12 +415,12 @@ transform: rotate(360deg);
     }
     50%{
         transform-origin: bottom right;
-        transform: translateX(20vw) rotate(-45deg) rotate(90deg) ;
+        transform: translateX(15vw) rotate(-45deg) rotate(90deg) ;
        
     }
     55%{
         transform-origin: bottom right;
-        transform:translateX(20vw) rotate(-1deg) ;
+        transform:translateX(15vw) rotate(-1deg) ;
        
     }
   
@@ -440,7 +453,31 @@ transform: rotate(360deg);
   .customer-quote{
     max-width: 90%;
   }
+  /*  */
+  /* Sliders CSS */
+.fade-in{
+  opacity: 0;
+  transition: opacity 1000ms ease-in;
+}
+.fade-in.appear{
+  opacity: 1;
+}
+.from-left{
   
+transform: translateX(-80%);
+}
+.from-right{
+  
+transform: translateX(80%);
+}
+.from-left,.from-right{
+  transition: opacity 500ms ease-in, transform 1000ms ease-in;
+  opacity: 0;
+}
+.from-left.appear,.from-right.appear{
+  transform: translateX(0);
+  opacity: 1;
+}
 
 
 /*  */
@@ -457,3 +494,52 @@ transform: rotate(360deg);
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .height-max {
+    min-height: calc(100vh - 85.99px);
+    background: url(../img/jaguarbg-500.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+  
+    /* animation-name: zoomIn;
+    animation-duration: 20s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite; */
+  }
+}
+@media screen and (min-width: 1000px) {
+  .height-max {
+    min-height: calc(100vh - 85.99px);
+    background: url(../img/jaguarbg-1000.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+  
+    /* animation-name: zoomIn;
+    animation-duration: 20s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite; */
+  }
+}
+@media screen and (min-width: 1500px ) and (max-width:1900px) {
+  .height-max {
+    min-height: calc(100vh - 85.99px);
+    background: url(../img/jaguarbg-1500.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+  
+    /* animation-name: zoomIn;
+    animation-duration: 20s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite; */
+  }
+}
+@media screen and (min-width: 1920px ) {
+  .height-max {
+    min-height: calc(100vh - 85.99px);
+    background: url(../img/jaguarbg-1920.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+  
+    /* animation-name: zoomIn;
+    animation-duration: 20s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite; */
+  }
+}
+

@@ -1,4 +1,4 @@
-window.addEventListener('load', () => document.querySelector('.preloader').classList.add('hidePreLoader'));
+// window.addEventListener('load', () => document.querySelector('.preloader').classList.add('hidePreLoader'));
 
 // Special Cars
 const CreateCars = (() => {
@@ -33,12 +33,12 @@ const CreateCars = (() => {
         makeCar('c-type', 'Britain', 'img/special1952.jpg', true, '1952', '6,000,000', 'sports', 'manual', '5');
         makeCar('e-type', 'Britain', 'img/special1961.jpg', true, '1961', '3,000,000', 'sports', 'manual', '5');
         makeCar('e-type', 'Britain', 'img/special1972.jpg', true, '1972', '4,000,000', 'sports', 'manual', '5');
-        makeCar('xj-type', 'Britain', 'img/jaguarxj.jpg', false, '2019', '75,000', 'sports', 'manual', '18');
-        makeCar('f-type', 'Britain', 'img/jaguarf2020.jpg', false, '2020', '62,000', 'sports', 'auto', '23');
-        makeCar('f-type', 'Britain', 'img/jaguarfpace.jpg', false, '2020', '46,000', 'offroad', 'manual', '27');
-        makeCar('i-type', 'Britain', 'img/jaguaripace.jpg', false, '2020', '70,000', 'electric', 'auto', '234');
-        makeCar('xf-type', 'Britain', 'img/jaguarxf.jpg', false, '2019', '65,000', 'offroad', 'manual', '25');
-        makeCar('xe-type', 'Britain', 'img/jaguarxe.jpg', false, '2020', '40,000', 'sports', 'auto', '25');
+        makeCar('xj-type', 'Britain', 'jaguarxj', false, '2019', '75,000', 'sports', 'manual', '18');
+        makeCar('f-type', 'Britain', 'jaguarf2020', false, '2020', '62,000', 'sports', 'auto', '23');
+        makeCar('f-type', 'Britain', 'jaguarfpace', false, '2020', '46,000', 'offroad', 'manual', '27');
+        makeCar('i-type', 'Britain', 'jaguaripace', false, '2020', '70,000', 'electric', 'auto', '234');
+        makeCar('xf-type', 'Britain', 'jaguarxf', false, '2019', '65,000', 'offroad', 'manual', '25');
+        makeCar('xe-type', 'Britain', 'jaguarxe', false, '2020', '40,000', 'sports', 'auto', '25');
 
     }
     produceCars();
@@ -88,6 +88,8 @@ const displaySpecialCars = ((CreateCars) => {
         // if clicked within a div
         if (event.target.classList.contains('featured-item')) {
             const img = event.target.firstElementChild.dataset.img;
+            
+            // console.log(event.target.firstElementChild.dataset);
 
             $('#picture').attr('src', img);
         } else if (event.target.classList.contains('head-text')) {
@@ -100,7 +102,7 @@ const displaySpecialCars = ((CreateCars) => {
             $('#picture').attr('src', img);
         }
         
-    console.log('before magnific');
+ 
     $('.featured-link').magnificPopup({
         items: {
           src: $('.special-car-img img').attr('src')
@@ -137,9 +139,9 @@ const displayCars = ((CreateCars) => {
         inventory.innerHTML = '';
         let output = '';
         regCar.forEach((car) => {
-            output += `     <div class="col-12 mx-auto my-3 col-md-6 col-lg-4 ${car.trans} single-car">
+            output += `<div class="col-12 mx-auto my-3 col-md-6 col-lg-4 ${car.trans} single-car">
         <div class="card car-card">
-            <img src="${car.img}" alt="jag1" class="card-img-top car-img popup-img">
+            <img src="img/jaguarbg-1920.jpg" data-src="img/${car.img}.jpg" alt="jag1" class="lazy card-img-top car-img popup-img" data-srcset="img/${car.img}.jpg 1920w, img/${car.img}-1500.jpg 1500w, img/${car.img}-1000.jpg 1000w, img/${car.img}-500.jpg 500w  ">
             <div class="card-body">
                 <div class="car-info d-flex justify-content-between">
                     <!-- 1st child -->
@@ -231,6 +233,8 @@ $('.featured-link').magnificPopup({
 
 
 
+
+
 // 
     // Smooth Scroll
     $('.nav-item a,.header-link').click(function(link){
@@ -248,5 +252,76 @@ window.onload = function () {
 
     });
 };
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     console.log('hello!')
+    
+//     const images = document.querySelectorAll("[data-src]");
+  
+//   const imgOptions ={
+//       threshold: 0,
+//       rootMargin:"0px 0px 300px 0px"
+//   };
+  
+//   function preloadImage(img){
+//      const src = img.getAttribute("data-src");
+//      if(!src){
+//          return;
+//      }
+//      img.src = src;
+//   }
+  
+//   const imgObserver = new IntersectionObserver((entries,imgObserver)=>{
+//   entries.forEach(entry => {
+//       if(!entry.isIntersecting){
+//           return;
+//       }else{
+//           preloadImage(entry.target);
+//           imgObserver.unobserve(entry.target);
+//       }
+//   })
+//   },imgOptions);
+  
+//   images.forEach(image => {
+//       imgObserver.observe(image);
+//   });
+   
+  
+  
+  
+//   });
+document.addEventListener("DOMContentLoaded", () => {
+    const options = {
+      root:null,// its the viewport
+      threshold: 0, //if 1 then 100% of item needs to be on the page
+      rootMargin: "-50px" 
+  };
+      var lazyImages =[].slice.call(
+       document.querySelectorAll("img.lazy")
+      )
+      
+      if ("IntersectionObserver" in window) {
+         let lazyImageObserver = 
+           new IntersectionObserver((entries, observer) => {
+             entries.forEach(function(entry) {
+               if (entry.isIntersecting) {
+                 let lazyImage = entry.target;
+                 lazyImage.src = lazyImage.dataset.src;
+                 lazyImage.srcset = lazyImage.dataset.srcset;
+                 lazyImage.classList.remove("lazy");
+                 lazyImage.classList.add("appear");
+                 lazyImageObserver.unobserve(lazyImage);
+                 //console.log(lazyImages);
+               }
+             });
+           },options);
+     
+         lazyImages.forEach(function(lazyImage) {
+           lazyImageObserver.observe(lazyImage);
+         });
+       } else {
+         // Possibly fall back to a more compatible method here
+       }
+     });
 
 

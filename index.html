@@ -5,55 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/4f81b693f0.js"></script>
+    <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/magnific-popup.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Jaguar Dealership</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset='86'>
     <!-- Preloader -->
-    <div class="preloader d-flex justify-content-center align-items-center">
-        <img src="./img/loader.gif" alt="">
-    </div>
+    <!-- <div class="preloader d-flex justify-content-center align-items-center">
+        <img data-src="./img/loader.gif" alt="">
+    </div> -->
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg px-3 sticky-top" id="navBar">
+    <nav class="navbar navbar-expand-lg px-3 fixed-top" id="navBar">
         <a href="#" class="navbar-brand">
-            <img src="./img/logo2.png" alt="logo">
+            <img src="img/logo2.png" alt="logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle='collapse' data-target='#myNav'>
+        <button class="navbar-toggler" type="button" data-toggle='collapse' data-target='#myNav' aria-label="Navigation Bar Button">
             <span class="navbar-icon">
                 <i class="fas fa-bars"></i>
             </span>
         </button>
         <div class="collapse navbar-collapse" id="myNav">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item active mx-1">
-                    <a href="#top" class="nav-link">Home</a>
+                <li class="nav-item  mx-1">
+                    <a href="#top" class="nav-link active" id="nav-home">Home</a>
                 </li>
                 <li class="nav-item mx-1">
-                    <a href="#skills" class="nav-link">Benefits</a>
+                    <a href="#skills" class="nav-link " id="nav-benefits">Benefits</a>
                 </li>
                 <li class="nav-item mx-1">
-                    <a href="#inventory" class="nav-link">Inventory</a>
+                    <a href="#inventory" class="nav-link " id="nav-inventory">Inventory</a>
                 </li>
                 <li class="nav-item mx-1">
-                    <a href="#featured" class="nav-link">Featured</a>
+                    <a href="#featured" class="nav-link " id="nav-featured">Featured</a>
                 </li>
                 <li class="nav-item mx-1">
-                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#gallery" class="nav-link " id="nav-gallery">Gallery</a>
                 </li>
                 <li class="nav-item mx-1">
-                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#services" class="nav-link " id="nav-services">Services</a>
                 </li>
                 <li class="nav-item mx-1">
-                    <a href="#reviews" class="nav-link">Reviews</a>
+                    <a href="#reviews" class="nav-link " id="nav-reviews">Reviews</a>
                 </li>
                
             </ul>
             <!-- Social Icons -->
-            <div class="nav-icons d-none d-lg-block">
+            <div class="nav-icons d-none d-xl-block">
                 <a href="#!" class="nav-icon">
                     <i class="fab fa-facebook fa-2x"></i>
                 </a>
@@ -68,7 +68,7 @@
     </nav>
 
     <!-- Header Section -->
-    <header class="header" id="header">
+    <header class="header watch-me" id="header">
         <div class="container-fluid">
             <div class="row height-max align-items-center">
                 <div class="col col-md-9 ml-auto text-right pr-5 header-text">
@@ -76,28 +76,28 @@
                     <h2 class="text-uppercase my-2 title">Jaguar 2019</h2>
                     <h3 class="text-uppercase">XK-3000</h3>
                     <h6 class="text-capitalize">starts from</h6>
-                    <h2>$80,000 <a href="" class="title-icon d-inline-block mx-2"><i class="fas fa-play"></i></a> </h2>
+                    <h2>$80,000 <a href="" class="title-icon d-inline-block mx-2" aria-label="Price Button"><i class="fas fa-play"></i></a> </h2>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Skill Section -->
-    <section class="skills py-5" id="skills">
+    <section class="skills py-5 watch-me" id="skills">
         <div class="container">
             <!-- title -->
             <div class="row mb-5">
                 <div class="col d-flex flex-wrap text-uppercase justify-content-center">
-                    <h1 class="font-weight-bold align-self-center mx-1 sectionTitle">Why Choose our</h1>
-                    <h1 class="section-title--special mx-1 text-uppercase">car dealer</h1>
+                    <h1 class="font-weight-bold align-self-center mx-1 sectionTitle ">Why Choose our</h1>
+                    <h1 class="section-title--special mx-1 text-uppercase ">car dealer</h1>
 
                 </div>
             </div>
             <!-- skills -->
             <div class="row">
                 <!-- Single Skill -->
-                <div class="col-sm-6 col-lg-3 text-center my-3">
-                    <a href="#" class="skills-icon p-2 rounded-circle">
+                <div class="col-sm-6 col-lg-3 text-center my-3 ">
+                    <a href="#" class="skills-icon p-2 rounded-circle" aria-label="Inventory icon">
                         <i class="fas fa-car fa-fw"></i>
                     </a>
                     <h6 class="text-uppercase font-weight-bold my-3">All Types</h6>
@@ -105,24 +105,24 @@
                     <p class="w-75 mx-auto text-muted">We carry all types of Jaguars, and if we dont have the one you
                         want we can order one special for you.</p>
                 </div>
-                <div class="col-sm-6 col-lg-3 text-center my-3">
-                    <a href="#" class="skills-icon p-2 rounded-circle">
+                <div class="col-sm-6 col-lg-3 text-center my-3 ">
+                    <a href="#" class="skills-icon p-2 rounded-circle" aria-label="Skills Icon">
                         <i class="fas fa-comments fa-fw"></i>
                     </a>
                     <h6 class="text-uppercase font-weight-bold my-3">Free Support</h6>
                     <div class="skills-underline"></div>
                     <p class="w-75 mx-auto text-muted">We provide 24/7 support for your car</p>
                 </div>
-                <div class="col-sm-6 col-lg-3 text-center my-3">
-                    <a href="#" class="skills-icon p-2 rounded-circle">
+                <div class="col-sm-6 col-lg-3 text-center my-3 ">
+                    <a href="#" class="skills-icon p-2 rounded-circle" aria-label="Services Icon">
                         <i class="fas fa-people-carry fa-fw"></i>
                     </a>
                     <h6 class="text-uppercase font-weight-bold my-3">Caring</h6>
                     <div class="skills-underline"></div>
                     <p class="w-75 mx-auto text-muted">We will deliver your car to you withing 24 hours.</p>
                 </div>
-                <div class="col-sm-6 col-lg-3 text-center my-3">
-                    <a href="#" class="skills-icon p-2 rounded-circle">
+                <div class="col-sm-6 col-lg-3 text-center my-3 ">
+                    <a href="#" class="skills-icon p-2 rounded-circle" aria-label="Low Prices Icon">
                         <i class="fas fa-wallet fa-fw"></i>
                     </a>
                     <h6 class="text-uppercase font-weight-bold my-3">Affordable</h6>
@@ -134,13 +134,13 @@
     </section>
 
     <!-- Inventory -->
-    <section class="inventory py-5" id="inventory">
-        <div class="container">
+    <section class="inventory py-5 watch-me" id="inventory">
+        <div class="container ">
             <!-- title -->
             <div class="row mb-5">
                 <div class="col d-flex flex-wrap text-uppercase justify-content-center">
-                    <h1 class="font-weight-bold align-self-center mx-1 yellow">Our</h1>
-                    <h1 class="section-title--special mx-1 text-uppercase">Inventory</h1>
+                    <h1 class="font-weight-bold align-self-center mx-1 yellow ">Our</h1>
+                    <h1 class="section-title--special mx-1 text-uppercase ">Inventory</h1>
 
                 </div>
             </div>
@@ -155,157 +155,9 @@
 
             </div>
             <!-- Cars Inventory -->
-            <div class="row gridCars inventory-container">
+            <div class="row gridCars inventory-container ">
                 <!-- Single Car -->
-                <div class="col-12 mx-auto my-3 col-md-6 col-lg-4 new">
-                    <div class="card car-card">
-                        <img src="img/jag1c.jpg" alt="jag1" class="card-img-top car-img">
-                        <div class="card-body">
-                            <div class="car-info d-flex justify-content-between">
-                                <!-- 1st child -->
-                                <div class="car-text text-uppercase">
-                                    <h6 class="font-weight-bold">Model</h6>
-                                    <h6>year</h6>
-                                </div>
-                                <!-- 2nd child -->
-                                <h5 class="car-value align-self-center py-2 px-3">
-                                    $<span class="car-price">10,000</span>
-                                </h5>
-                            </div>
-                        </div>
-                        <!-- card footer -->
-                        <div class="card-footer text-capitalize d-flex justify-content-between">
-                            <p><span><i class="fas fa-car"></i></span> Sedan</p>
-                            <p><span><i class="fas fa-cogs"></i></span> auto</p>
-                            <p><span><i class="fas fa-gas-pump"></i></span> 35</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Car -->
-                <div class="col-12 mx-auto my-3 col-md-6 col-lg-4 new">
-                    <div class="card car-card">
-                        <img src="img/jag1c.jpg" alt="jag1" class="card-img-top car-img">
-                        <div class="card-body">
-                            <div class="car-info d-flex justify-content-between">
-                                <!-- 1st child -->
-                                <div class="car-text text-uppercase">
-                                    <h6 class="font-weight-bold">Model</h6>
-                                    <h6>year</h6>
-                                </div>
-                                <!-- 2nd child -->
-                                <h5 class="car-value align-self-center py-2 px-3">
-                                    $<span class="car-price">10,000</span>
-                                </h5>
-                            </div>
-                        </div>
-                        <!-- card footer -->
-                        <div class="card-footer text-capitalize d-flex justify-content-between">
-                            <p><span><i class="fas fa-car"></i></span> Sedan</p>
-                            <p><span><i class="fas fa-cogs"></i></span> auto</p>
-                            <p><span><i class="fas fa-gas-pump"></i></span> 35</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Car -->
-                <div class="col-12 mx-auto my-3 col-md-6 col-lg-4">
-                    <div class="card car-card">
-                        <img src="img/jag1c.jpg" alt="jag1" class="card-img-top car-img">
-                        <div class="card-body">
-                            <div class="car-info d-flex justify-content-between">
-                                <!-- 1st child -->
-                                <div class="car-text text-uppercase">
-                                    <h6 class="font-weight-bold">Model</h6>
-                                    <h6>year</h6>
-                                </div>
-                                <!-- 2nd child -->
-                                <h5 class="car-value align-self-center py-2 px-3">
-                                    $<span class="car-price">10,000</span>
-                                </h5>
-                            </div>
-                        </div>
-                        <!-- card footer -->
-                        <div class="card-footer text-capitalize d-flex justify-content-between">
-                            <p><span><i class="fas fa-car"></i></span> Sedan</p>
-                            <p><span><i class="fas fa-cogs"></i></span> auto</p>
-                            <p><span><i class="fas fa-gas-pump"></i></span> 35</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Car -->
-                <div class="col-12 mx-auto my-3 col-md-6 col-lg-4">
-                    <div class="card car-card">
-                        <img src="img/jag1c.jpg" alt="jag1" class="card-img-top car-img">
-                        <div class="card-body">
-                            <div class="car-info d-flex justify-content-between">
-                                <!-- 1st child -->
-                                <div class="car-text text-uppercase">
-                                    <h6 class="font-weight-bold">Model</h6>
-                                    <h6>year</h6>
-                                </div>
-                                <!-- 2nd child -->
-                                <h5 class="car-value align-self-center py-2 px-3">
-                                    $<span class="car-price">10,000</span>
-                                </h5>
-                            </div>
-                        </div>
-                        <!-- card footer -->
-                        <div class="card-footer text-capitalize d-flex justify-content-between">
-                            <p><span><i class="fas fa-car"></i></span> Sedan</p>
-                            <p><span><i class="fas fa-cogs"></i></span> auto</p>
-                            <p><span><i class="fas fa-gas-pump"></i></span> 35</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Car -->
-                <div class="col-12 mx-auto my-3 col-md-6 col-lg-4">
-                    <div class="card car-card">
-                        <img src="img/jag1c.jpg" alt="jag1" class="card-img-top car-img">
-                        <div class="card-body">
-                            <div class="car-info d-flex justify-content-between">
-                                <!-- 1st child -->
-                                <div class="car-text text-uppercase">
-                                    <h6 class="font-weight-bold">Model</h6>
-                                    <h6>year</h6>
-                                </div>
-                                <!-- 2nd child -->
-                                <h5 class="car-value align-self-center py-2 px-3">
-                                    $<span class="car-price">10,000</span>
-                                </h5>
-                            </div>
-                        </div>
-                        <!-- card footer -->
-                        <div class="card-footer text-capitalize d-flex justify-content-between">
-                            <p><span><i class="fas fa-car"></i></span> Sedan</p>
-                            <p><span><i class="fas fa-cogs"></i></span> auto</p>
-                            <p><span><i class="fas fa-gas-pump"></i></span> 35</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Car -->
-                <div class="col-12 mx-auto my-3 col-md-6 col-lg-4 type-price new highPrice">
-                    <div class="card car-card">
-                        <img src="img/jag1c.jpg" alt="jag1" class="card-img-top car-img">
-                        <div class="card-body">
-                            <div class="car-info d-flex justify-content-between">
-                                <!-- 1st child -->
-                                <div class="car-text text-uppercase">
-                                    <h6 class="font-weight-bold">Model</h6>
-                                    <h6>year</h6>
-                                </div>
-                                <!-- 2nd child -->
-                                <h5 class="car-value align-self-center py-2 px-3">
-                                    $<span class="car-price">150,000</span>
-                                </h5>
-                            </div>
-                        </div>
-                        <!-- card footer -->
-                        <div class="card-footer text-capitalize d-flex justify-content-between">
-                            <p><span><i class="fas fa-car"></i></span> Sedan</p>
-                            <p><span><i class="fas fa-cogs"></i></span> auto</p>
-                            <p><span><i class="fas fa-gas-pump"></i></span> 35</p>
-                        </div>
-                    </div>
-                </div>
+                
                 <!-- end -->
             </div>
 
@@ -317,9 +169,9 @@
         <div class="container">
             <div class="row">
                 <!-- Single question -->
-                <div class="col-10 mx-auto my-2 col-md-6 d-flex justify-content-between question-grey p-4">
+                <div class="col-10 mx-auto my-2 col-md-6 d-flex justify-content-between question-grey p-4 ">
                     <!-- 1st child -->
-                    <a href="#" class="question-icon mr-3">
+                    <a href="#" class="question-icon mr-3" aria-label="Looking to buy a car icon">
                         <i class="fas fa-search fa-fw"></i>
                     </a>
                     <div class="question-text w-75">
@@ -329,9 +181,9 @@
                     </div>
                 </div>
                 <!-- 2nd question -->
-                <div class="col-10 mx-auto my-2 col-md-6 d-flex justify-content-between question-yellow p-4">
+                <div class="col-10 mx-auto my-2 col-md-6 d-flex justify-content-between question-yellow p-4 ">
                     <!-- 1st child -->
-                    <a href="#" class="question-icon mr-3">
+                    <a href="#" class="question-icon mr-3" aria-label="Want to sell a car icon">
                         <i class="fas fa-dollar-sign fa-fw"></i>
                     </a>
                     <div class="question-text w-75">
@@ -345,57 +197,29 @@
     </section>
 
     <!-- Featured Cars Section -->
-    <section class="featured py-5" id="featured">
+    <section class="featured py-5 watch-me" id="featured">
         <div class="container">
             <!-- Title -->
             <div class="row mb-5">
                 <div class="col d-flex flex-wrap text-uppercase justify-content-center">
-                    <h1 class="font-weight-bold align-self-center mx-1">Featured</h1>
-                    <h1 class="section-title--special mx-1 text-uppercase">cars</h1>
+                    <h1 class="font-weight-bold align-self-center mx-1 ">Featured</h1>
+                    <h1 class="section-title--special mx-1 text-uppercase ">cars</h1>
 
                 </div>
             </div>
             <!--  -->
             <div class="row">
                 <!-- Info -->
-                <div class="col-10 mx-auto col-lg-6 featured-info my-3">
-                    <!-- single item -->
-                    <div class="featured-item my-3 d-flex p-2 text-capitalize align-items-baseline flex-wrap"
-                        id="sp-item1">
-                        <span class="featured-icon mr-2"><i class="fas fa-car"></i></span>
-                        <h5 class="font-weight-bold mx-1">Jaguar x type</h5>
-                        <h5 class="mx-1">1985</h5>
-                    </div>
-                    <div class="featured-item my-3 d-flex p-2 text-capitalize align-items-baseline flex-wrap"
-                        id="sp-item2">
-                        <span class="featured-icon mr-2"><i class="fas fa-car"></i></span>
-                        <h5 class="font-weight-bold mx-1">Jaguar x type</h5>
-                        <h5 class="mx-1">1985</h5>
-                    </div>
-                    <div class="featured-item my-3 d-flex p-2 text-capitalize align-items-baseline flex-wrap">
-                        <span class="featured-icon mr-2"><i class="fas fa-car"></i></span>
-                        <h5 class="font-weight-bold mx-1">Jaguar x type</h5>
-                        <h5 class="mx-1">1985</h5>
-                    </div>
-                    <div class="featured-item my-3 d-flex p-2 text-capitalize align-items-baseline flex-wrap">
-                        <span class="featured-icon mr-2"><i class="fas fa-car"></i></span>
-                        <h5 class="font-weight-bold mx-1">Jaguar x type</h5>
-                        <h5 class="mx-1">1985</h5>
-                    </div>
-                    <div class="featured-item my-3 d-flex p-2 text-capitalize align-items-baseline flex-wrap">
-                        <span class="featured-icon mr-2"><i class="fas fa-car"></i></span>
-                        <h5 class="font-weight-bold mx-1">Jaguar x type</h5>
-                        <h5 class="mx-1">1985</h5>
-                    </div>
-                    <!-- end -->
+                <div class="col-10 mx-auto col-lg-6 featured-info my-3 ">
+          
                 </div>
 
                 <!-- img -->
-                <div class="col-10 mx-auto col-lg-6 featured-img my-3 align-self-center">
+                <div class="col-10 mx-auto col-lg-6 featured-img my-3 align-self-center ">
                     <!-- img container -->
                     <div class="img-container special-car-img">
-                        <img src="img/special1935.jpg" alt="" class="img-fluid featured-photo" id="picture">
-                        <a href="#!" class="featured-link"><i class="fas fa-search"></i></a>
+                        <img src="img/special1935.jpg" alt="img/special1935" class="img-fluid featured-photo" id="picture">
+                        <a href="#!" class="featured-link" aria-label="Zoom in to image icon"><i class="fas fa-search"></i></a>
                     </div>
                 </div>
             </div>
@@ -403,31 +227,31 @@
     </section>
 
     <!-- Gallery -->
-    <section class="gallery py-5" id="gallery">
+    <section class="gallery py-5 watch-me" id="gallery">
         <div class="container gallery-container">
             <div class="row mb-5">
                 <div class="col d-flex flex-wrap text-uppercase justify-content-center">
-                    <h1 class="font-weight-bold align-self-center mx-1 yellow">Our</h1>
-                    <h1 class="section-title--special mx-1 text-uppercase">Gallery</h1>
+                    <h1 class="font-weight-bold align-self-center mx-1 yellow ">Our</h1>
+                    <h1 class="section-title--special mx-1 text-uppercase ">Gallery</h1>
 
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 ">
                     <div class="gallery-item my-1">
-                        <a href="img/testjag.jpg"><img src="img/testjag.jpg" alt="img"
-                                class="img-fluid gallery-img test-popup-link"></a>
+                        <a href="img/testjag.jpg"><img data-src="img/testjag.jpg" alt="img"
+                                class="img-fluid gallery-img test-popup-link lazy" data-srcset="img/testjag.jpg 1920w, img/testjag-1500.jpg 1500w, img/testjag-1000.jpg 1000w, img/testjag-500.jpg 500w"></a>
                     </div>
                 </div>
                 <!-- 2nd column -->
-                <div class="col-sm-6 d-flex flex-column justify-content-between">
+                <div class="col-sm-6 d-flex flex-column justify-content-between ">
                     <div class="row ">
                         <!-- 1st item -->
                         <div class="col-sm-6">
                             <div class="gallery-item my-1">
                                 <a href="img/special1935.jpg">
-                                    <img src="img/special1935.jpg" alt="img" class="img-fluid gallery-img">
+                                    <img data-src="img/special1935.jpg" alt="img" class="img-fluid gallery-img lazy" data-srcset="img/special1935.jpg 1920w, img/special1935-1500.jpg 1500w, img/special1935-1000.jpg 1000w, img/special1935-500.jpg 500w">
                                 </a>
                             </div>
                         </div>
@@ -435,7 +259,7 @@
                         <div class="col-sm-6">
                             <div class="gallery-item my-1">
                                 <a href="img/special1949.jpg">
-                                    <img src="img/special1949.jpg" alt="img" class="img-fluid gallery-img">
+                                    <img data-src="img/special1949.jpg" alt="img" class="img-fluid gallery-img lazy" data-srcset="img/special1949.jpg 1920w, img/special1949-1500.jpg 1500w, img/special1949-1000.jpg 1000w, img/special1949-500.jpg 500w">
                                 </a>
                             </div>
                         </div>
@@ -446,7 +270,7 @@
                         <div class="col-sm-6">
                             <div class="gallery-item my-1">
                                 <a href="img/special1952.jpg">
-                                    <img src="img/special1952.jpg" alt="img" class="img-fluid gallery-img">
+                                    <img data-src="img/special1952.jpg" alt="img" class="img-fluid gallery-img lazy" data-srcset="img/special1952.jpg 1920w, img/special1952-1500.jpg 1500w, img/special1952-1000.jpg 1000w, img/special1952-500.jpg 500w">
                                 </a>
                             </div>
                         </div>
@@ -454,7 +278,7 @@
                         <div class="col-sm-6">
                             <div class="gallery-item my-1">
                                 <a href="img/special1961.jpg">
-                                    <img src="img/special1961.jpg" alt="img" class="img-fluid gallery-img">
+                                    <img data-src="img/special1961.jpg" alt="img" class="img-fluid gallery-img lazy" data-srcset="img/special1961.jpg 1920w, img/special1961-1500.jpg 1500w, img/special1961-1000.jpg 1000w, img/special1961-500.jpg 500w">
                                 </a>
                             </div>
                         </div>
@@ -471,7 +295,7 @@
                 <div class="col-8 mx-auto col-md-6">
                     <form>
                         <div class="form-group">
-                            <input type="email" class="form-control contact-input p-3" placeholder="Enter email...">
+                            <input type="email" class="form-control contact-input p-3" placeholder="Enter email..." aria-label="Input Email Field">
                         </div>
                         <button type="submit" class="btn btn-outline-secondary btn-block contact-btn">Submit</button>
                     </form>
@@ -484,14 +308,14 @@
         <div class="container my-5">
                 <div class="row mb-5">
                         <div class="col d-flex flex-wrap text-uppercase justify-content-center">
-                            <h1 class="font-weight-bold align-self-center mx-1 yellow">Our</h1>
-                            <h1 class="section-title--special mx-1 text-uppercase">Services</h1>
+                            <h1 class="font-weight-bold align-self-center mx-1 yellow ">Our</h1>
+                            <h1 class="section-title--special mx-1 text-uppercase ">Services</h1>
         
                         </div>
                     </div>
         </div>
 
-        <section class="services  d-flex align-items-center" id="services">
+        <section class="services  d-flex align-items-center watch-me" id="services">
             <!-- video container -->
                 <div class="video-container">
                     <video  class="video-item" autoplay loop muted>
@@ -509,28 +333,28 @@
             <div class="container py-5">
                 <div class="row my-3">
                     <!-- 1st col -->
-                    <div class="col-8 mx-auto col-lg-6 col-md-4 my-3">
+                    <div class="col-8 mx-auto col-lg-6 col-md-4 my-3 " id="service-repait">
                         <div class="service py-5 pl-4 repair">
                             <span class="service-icon"><i class="fas fa-cogs"></i></span>
                             <h6 class="text-capitalize service-title">vehicle</h6>
                             <h5 class="text-uppercase font-weight-bold">repair</h5>
                         </div>
                     </div>
-                    <div class="col-8 mx-auto col-lg-6 col-md-4 my-3">
+                    <div class="col-8 mx-auto col-lg-6 col-md-4 my-3 " id="service-bat">
                         <div class="service py-5 pl-4 battery">
                             <span class="service-icon "><i class="fas fa-car-battery"></i></span>
                             <h6 class="text-capitalize service-title">battery</h6>
                             <h5 class="text-uppercase font-weight-bold">replacement</h5>
                         </div>
                     </div>
-                    <div class="col-8 mx-auto col-lg-6 col-md-4 my-3">
+                    <div class="col-8 mx-auto col-lg-6 col-md-4 my-3 " id="service-road">
                         <div class="service py-5 pl-4 roadside">
                             <span class="service-icon"><i class="fas fa-car-crash"></i></span>
                             <h6 class="text-capitalize service-title">roadside</h6>
                             <h5 class="text-uppercase font-weight-bold">assistance</h5>
                         </div>
                     </div>
-                    <div class="col-8 mx-auto col-lg-6 col-md-4 my-3" id="dilivery-car">
+                    <div class="col-8 mx-auto col-lg-6 col-md-4 my-3 " id="dilivery-car">
                         <div class="service py-5 pl-4  deliver">
                             <span class="service-icon"><i class="fas fa-truck-moving"></i></span>
                             <h6 class="text-capitalize service-title">car</h6>
@@ -543,21 +367,21 @@
         </section>
 
         <!-- Reviews -->
-        <section class="reviews py-5 " id="reviews">
+        <section class="reviews py-5 watch-me" id="reviews">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col d-flex flex-wrap text-uppercase justify-content-center">
-                        <h1 class="font-weight-bold align-self-center mx-1 yellow">Customer</h1>
-                        <h1 class="section-title--special mx-1 text-uppercase">Reviews</h1>
+                        <h1 class="font-weight-bold align-self-center mx-1 yellow ">Customer</h1>
+                        <h1 class="section-title--special mx-1 text-uppercase ">Reviews</h1>
     
                 </div>
             </div>
             <div class="row">
-                <div class="col-10 mx-auto my-5 col-md-6 col-lg-4">
+                <div class="col-10 mx-auto my-5 col-md-6 col-lg-4 ">
                     <div class="card">
-                        <img src="img/special1935.jpg" alt="car" class="card-img-top">
+                        <img data-src="img/special1935.jpg" alt="car" class="card-img-top lazy" data-srcset="img/special1935.jpg 1920w, img/special1935-1500.jpg 1500w, img/special1935-1000.jpg 1000w, img/special1935-500.jpg 500w">
                         <div class="card-body text-center customer-card-body">
-                            <img src="img/cutomer1.jpg" alt="customer image" class="rounded-circle customer-img">
+                            <img data-src="img/cutomer1.jpg" alt="customer image" class="rounded-circle customer-img lazy" data-srcset="img/cutomer1.jpg 1920w, img/cutomer1-1500.jpg 1500w, img/cutomer1-1000.jpg 1000w, img/cutomer1-500.jpg 500w">
                             <div class="card-title">
                                 <h5 class="customer-name text-capitalize">Stig</h5>
                             </div>
@@ -569,11 +393,11 @@
               
                
                 </div>
-                <div class="col-10 mx-auto my-5 col-md-6 col-lg-4">
+                <div class="col-10 mx-auto my-5 col-md-6 col-lg-4 ">
                     <div class="card">
-                        <img src="img/jaguarf2020.jpg" alt="car" class="card-img-top">
+                        <img data-src="img/jaguarf2020.jpg" alt="car" class="card-img-top lazy" data-srcset="img/jaguarf2020.jpg 1920w, img/jaguarf2020-1500.jpg 1500w, img/jaguarf2020-1000.jpg 1000w, img/jaguarf2020-500.jpg 500w">
                         <div class="card-body text-center customer-card-body">
-                            <img src="img/customer22.jpg" alt="customer image" class="rounded-circle customer-img">
+                            <img data-src="img/customer22.jpg" alt="customer image" class="rounded-circle customer-img lazy" data-srcset="img/customer22.jpg 1920w, img/customer22-1500.jpg 1500w, img/customer22-1000.jpg 1000w, img/customer22-500.jpg 500w">
                             <div class="card-title">
                                 <h5 class="customer-name text-capitalize">Rachel</h5>
                             </div>
@@ -585,11 +409,11 @@
               
                
                 </div>
-                <div class="col-10 mx-auto my-5 col-md-6 col-lg-4">
+                <div class="col-10 mx-auto my-5 col-md-6 col-lg-4 ">
                     <div class="card">
-                        <img src="img/jaguarxf.jpg" alt="car" class="card-img-top">
+                        <img data-src="img/jaguarxf.jpg" alt="car" class="card-img-top lazy" data-srcset="img/jaguarxf.jpg 1920w, img/jaguarxf-1500.jpg 1500w, img/jaguarxf-1000.jpg 1000w, img/jaguarxf-500.jpg 500w">
                         <div class="card-body text-center customer-card-body">
-                            <img src="img/customer3.jpg" alt="customer image" class="rounded-circle customer-img">
+                            <img data-src="img/customer3.jpg" alt="customer image" class="rounded-circle customer-img lazy" data-srcset="img/customer3.jpg 1920w, img/customer3-1500.jpg 1500w, img/customer3-1000.jpg 1000w, img/customer3-500.jpg 500w">
                             <div class="card-title">
                                 <h5 class="customer-name text-capitalize">Alice</h5>
                             </div>
@@ -608,11 +432,11 @@
 
     <footer class="footer py-5">
         <div class="footer-icons d-flex justify-content-around">
-            <a href="#!" class="footer-icon"><i class="fab fa-facebook"></i></a>
-            <a href="#!" class="footer-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#!" class="footer-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#!" class="footer-icon"><i class="fab fa-linkedin"></i></a>
-            <a href="#!" class="footer-icon"><i class="fab fa-google-plus"></i></a>
+            <a href="#!" class="footer-icon" aria-label="Facebook icon link"><i class="fab fa-facebook"></i></a>
+            <a href="#!" class="footer-icon" aria-label="Twitter icon link"><i class="fab fa-twitter"></i></a>
+            <a href="#!" class="footer-icon" aria-label="Instagram icon link"><i class="fab fa-instagram"></i></a>
+            <a href="#!" class="footer-icon" aria-label="Linkedin icon link"><i class="fab fa-linkedin"></i></a>
+            <a href="#!" class="footer-icon" aria-label="Google icon link"><i class="fab fa-google-plus"></i></a>
         </div>
     </footer>
 
@@ -630,7 +454,9 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
     <script src="./js/jquery.magnific-popup.js"></script>
+    <script src="./js/observers.js"></script>
     <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/4f81b693f0.js"></script>
     <script>
       
     </script>
