@@ -90,7 +90,8 @@ body {
   overflow: hidden;
 }
 .height-max {
-  min-height: calc(100vh - 85.99px);
+  /* min-height: calc(100vh - 85.99px); */
+  height: 100vh;
   background: url(../img/jaguarbg-1920.jpg) no-repeat center center/cover;
   background-attachment: fixed;
 
@@ -496,7 +497,8 @@ transform: translateX(80%);
 }
 @media screen and (max-width: 500px) {
   .height-max {
-    min-height: calc(100vh - 85.99px);
+    /* min-height: calc(100vh - 85.99px); */
+    height: 100vh;
     background: url(../img/jaguarbg-500.jpg) no-repeat center center/cover;
     background-attachment: fixed;
   
@@ -508,7 +510,8 @@ transform: translateX(80%);
 }
 @media screen and (min-width: 1000px) {
   .height-max {
-    min-height: calc(100vh - 85.99px);
+    /* min-height: calc(100vh - 85.99px); */
+    height: 100vh;
     background: url(../img/jaguarbg-1000.jpg) no-repeat center center/cover;
     background-attachment: fixed;
   
@@ -520,7 +523,8 @@ transform: translateX(80%);
 }
 @media screen and (min-width: 1500px ) and (max-width:1900px) {
   .height-max {
-    min-height: calc(100vh - 85.99px);
+    /* min-height: calc(100vh - 85.99px); */
+    height: 100vh;
     background: url(../img/jaguarbg-1500.jpg) no-repeat center center/cover;
     background-attachment: fixed;
   
@@ -532,7 +536,8 @@ transform: translateX(80%);
 }
 @media screen and (min-width: 1920px ) {
   .height-max {
-    min-height: calc(100vh - 85.99px);
+    /* min-height: calc(100vh - 85.99px); */
+    height: 100vh;
     background: url(../img/jaguarbg-1920.jpg) no-repeat center center/cover;
     background-attachment: fixed;
   
