@@ -94,7 +94,7 @@ body {
   height: 100vh;
   background: url(../img/jaguarbg-1920.jpg) no-repeat center center/cover;
   background-attachment: fixed;
-
+  transition: all 0.5s ease-in-out;
   /* animation-name: zoomIn;
   animation-duration: 20s;
   animation-delay: 5s;
@@ -540,7 +540,7 @@ transform: translateX(80%);
     height: 100vh;
     background: url(../img/jaguarbg-1920.jpg) no-repeat center center/cover;
     background-attachment: fixed;
-    transition: height 0.5s ease-in;
+    
     /* animation-name: zoomIn;
     animation-duration: 20s;
     animation-delay: 5s;
