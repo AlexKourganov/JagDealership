@@ -90,16 +90,14 @@ body {
   overflow: hidden;
 }
 .height-max {
-  /* min-height: calc(100vh - 85.99px); */
+
   height: 100vh;
   background: url(../img/jaguarbg-1920.jpg) no-repeat center center/cover;
   background-attachment: fixed;
   transition: height 9999.9s;
-  /* animation-name: zoomIn;
-  animation-duration: 20s;
-  animation-delay: 5s;
-  animation-iteration-count: infinite; */
+
 }
+
 /* header animation */
 @keyframes zoomIn {
   0% {
